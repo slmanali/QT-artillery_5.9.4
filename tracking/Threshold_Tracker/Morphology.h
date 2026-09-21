@@ -1,0 +1,12 @@
+void FastBinErode3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastBinDilate3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastBinOpen3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastBinClose3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastBinClose (unsigned char * src,  unsigned char  * dst, int W,int H);
+void FastBinOpen (unsigned char * src,  unsigned char  * dst, int W,int H);
+void ByteToBits(unsigned char * src,unsigned char * dst,int W,int H);
+void BitsToByte(unsigned char * src,unsigned char * dst,int W,int H);
+void FastGreyErode3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastGreyDilate3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastGreyClose3x3(unsigned char *src, unsigned char *dst,int W,int H);
+void FastGreyOpen3x3(unsigned char *src, unsigned char *dst,int W,int H);

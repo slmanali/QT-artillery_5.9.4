@@ -1,0 +1,14 @@
+﻿Build started 10/29/2014 3:26:32 PM.
+     1>Project "F:\tracker code\eigen.2.0.17\build\ALL_BUILD.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Win32\Debug\ALL_BUILD\ALL_BUILD.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Build all projects
+       FinalizeBuildStatus:
+         Deleting file "Win32\Debug\ALL_BUILD\ALL_BUILD.unsuccessfulbuild".
+         Touching "Win32\Debug\ALL_BUILD\ALL_BUILD.lastbuildstate".
+     1>Done Building Project "F:\tracker code\eigen.2.0.17\build\ALL_BUILD.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.04

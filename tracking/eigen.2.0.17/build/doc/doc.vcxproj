@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{15F16DA1-CF59-43BD-93DA-211C0BD66B85}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>doc</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc;F:/tracker code/eigen.2.0.17/doc;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc;F:/tracker code/eigen.2.0.17/doc;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc;F:/tracker code/eigen.2.0.17/doc;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc;F:/tracker code/eigen.2.0.17/doc;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\Doxyfile.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_header.html.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_footer.html.in;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\Doxyfile.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_header.html.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_footer.html.in;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\Doxyfile.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_header.html.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_footer.html.in;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/tracker code/eigen.2.0.17/doc/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\Doxyfile.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_header.html.in;F:\tracker code\eigen.2.0.17\doc\eigendoxy_footer.html.in;F:\tracker code\eigen.2.0.17\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\85fa6fb5cde8119b329cc10f03d38204\doc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd "F:\tracker code\eigen.2.0.17\build\doc"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E make_directory "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/eigendoxy_tabs.css" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/Eigen_Silly_Professor_64x64.png" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+doxygen
+if %errorlevel% neq 0 goto :cmEnd
+"F:\tracker code\eigen.2.0.17\doc\cleanhierarchy.sh" "F:/tracker code/eigen.2.0.17/build/doc/html/hierarchy.html"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/85fa6fb5cde8119b329cc10f03d38204/doc.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\doc</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd "F:\tracker code\eigen.2.0.17\build\doc"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E make_directory "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/eigendoxy_tabs.css" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/Eigen_Silly_Professor_64x64.png" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+doxygen
+if %errorlevel% neq 0 goto :cmEnd
+"F:\tracker code\eigen.2.0.17\doc\cleanhierarchy.sh" "F:/tracker code/eigen.2.0.17/build/doc/html/hierarchy.html"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/85fa6fb5cde8119b329cc10f03d38204/doc.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\doc</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd "F:\tracker code\eigen.2.0.17\build\doc"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E make_directory "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/eigendoxy_tabs.css" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/Eigen_Silly_Professor_64x64.png" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+doxygen
+if %errorlevel% neq 0 goto :cmEnd
+"F:\tracker code\eigen.2.0.17\doc\cleanhierarchy.sh" "F:/tracker code/eigen.2.0.17/build/doc/html/hierarchy.html"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/85fa6fb5cde8119b329cc10f03d38204/doc.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\doc</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd "F:\tracker code\eigen.2.0.17\build\doc"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E make_directory "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/eigendoxy_tabs.css" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E copy "F:/tracker code/eigen.2.0.17/doc/Eigen_Silly_Professor_64x64.png" "F:/tracker code/eigen.2.0.17/build/doc/html/"
+if %errorlevel% neq 0 goto :cmEnd
+doxygen
+if %errorlevel% neq 0 goto :cmEnd
+"F:\tracker code\eigen.2.0.17\doc\cleanhierarchy.sh" "F:/tracker code/eigen.2.0.17/build/doc/html/hierarchy.html"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/85fa6fb5cde8119b329cc10f03d38204/doc.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\tracker code\eigen.2.0.17\build\doc\CMakeFiles\doc</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/ZERO_CHECK.vcxproj">
+      <Project>E71BDBE5-10BF-45EB-AB52-890DC8C00F17</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/examples/all_examples.vcxproj">
+      <Project>E42620FB-0874-4CDA-9342-7DF240BDB135</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/all_snippets.vcxproj">
+      <Project>7EBB12C1-C505-4E3A-8F6C-40111CED466A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7EBB12C1-C505-4E3A-8F6C-40111CED466A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>all_snippets</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc/snippets;F:/tracker code/eigen.2.0.17/doc/snippets;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc/snippets;F:/tracker code/eigen.2.0.17/doc/snippets;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc/snippets;F:/tracker code/eigen.2.0.17/doc/snippets;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:/tracker code/eigen.2.0.17/build/doc/snippets;F:/tracker code/eigen.2.0.17/doc/snippets;F:/tracker code/eigen.2.0.17;F:/tracker code/eigen.2.0.17/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\doc\snippets\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" "-HF:/tracker code/eigen.2.0.17" "-BF:/tracker code/eigen.2.0.17/build" --check-stamp-file "F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/tracker code/eigen.2.0.17/doc/snippets/CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\compile_snippet.cpp.in;F:\tracker code\eigen.2.0.17\doc\snippets\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\3f597edff5c37110f106777f342b69f3\all_snippets.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/3f597edff5c37110f106777f342b69f3/all_snippets.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\all_snippets</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/3f597edff5c37110f106777f342b69f3/all_snippets.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\all_snippets</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/3f597edff5c37110f106777f342b69f3/all_snippets.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\all_snippets</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/tracker code/eigen.2.0.17/build/CMakeFiles/3f597edff5c37110f106777f342b69f3/all_snippets.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\tracker code\eigen.2.0.17\build\doc\snippets\CMakeFiles\all_snippets</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\all_snippets" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/ZERO_CHECK.vcxproj">
+      <Project>E71BDBE5-10BF-45EB-AB52-890DC8C00F17</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_AngleAxis_mimic_euler.vcxproj">
+      <Project>9C5FE409-493D-4B6E-9BF6-60C177F062CC</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_abs.vcxproj">
+      <Project>2E8BA189-B5F7-406B-A4F6-8E3742C1E1F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_abs2.vcxproj">
+      <Project>6B7FE7A7-7CE6-4947-9F89-582A50134C01</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_cos.vcxproj">
+      <Project>A91E1857-C967-41CA-B694-0A15BEBF0EB5</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_cube.vcxproj">
+      <Project>9DF35E45-7B7F-4688-95EF-5650EA22D977</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_equal_equal.vcxproj">
+      <Project>AA924A26-227B-4163-B176-CFE7491F911D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_exp.vcxproj">
+      <Project>34BD36AC-B3EA-4DDD-A930-DAFEF4060B04</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_greater.vcxproj">
+      <Project>C9F73BD8-A086-47D4-9693-AD5419795648</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_greater_equal.vcxproj">
+      <Project>89FDA129-EFA9-4E49-BFF9-72F7FF621E5B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_inverse.vcxproj">
+      <Project>311F91CF-8543-4067-B45B-803BB99F0530</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_less.vcxproj">
+      <Project>33E2106A-0ACE-4CE9-8E5B-6A64A98D791E</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_less_equal.vcxproj">
+      <Project>FCC9195A-31A2-4040-A3E9-CD0CFA536EDB</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_log.vcxproj">
+      <Project>41861BE7-FA42-4C68-A87C-66D63230D709</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_max.vcxproj">
+      <Project>0160F508-EA73-49D5-9A8D-5362ACBE3819</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_min.vcxproj">
+      <Project>E248FDAC-CE84-4FD1-BA4E-5C486F16F0A2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_minus.vcxproj">
+      <Project>483BCBD9-7957-44FF-92D7-57E8D0F33937</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_minus_equal.vcxproj">
+      <Project>A7AA97B0-0CAE-45D4-B92C-013CBEF446A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_not_equal.vcxproj">
+      <Project>05707B09-CB96-4148-955F-0447E687DD52</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_plus.vcxproj">
+      <Project>3ECB73CA-61FA-42F5-A1F6-0CDBB48EA315</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_plus_equal.vcxproj">
+      <Project>B134E4D9-D1E8-45FF-8B35-6C90DC8D578B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_pow.vcxproj">
+      <Project>7AAE66AE-B78F-4762-A910-E439D31FE0A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_product.vcxproj">
+      <Project>960E37B5-D039-422D-8751-2DA7C4EA54BA</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_quotient.vcxproj">
+      <Project>244C40B1-0871-4E25-8476-C8D3B0586D3F</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_sin.vcxproj">
+      <Project>53A30332-5FCB-4D2C-A58E-72A8B1659A2B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_slash_equal.vcxproj">
+      <Project>355FD560-04F8-41E8-B270-D5C8068E453A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_sqrt.vcxproj">
+      <Project>AD024A31-1EFC-4DE0-AE7F-6C775530964B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_square.vcxproj">
+      <Project>D72BB72A-83C3-496A-931A-2E18F137CE39</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Cwise_times_equal.vcxproj">
+      <Project>9A7857BF-8C87-4DB5-86E0-469F967F17EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_IOFormat.vcxproj">
+      <Project>F064D42A-7843-4A4D-86BF-53C76C5A042D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_LLT_solve.vcxproj">
+      <Project>09E8BE00-EB5F-47B0-A96A-E5E222C8D6ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_LU_computeImage.vcxproj">
+      <Project>B5A18A59-C49C-48FC-8B30-A7A17235F81A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_LU_computeKernel.vcxproj">
+      <Project>F13D5CF8-0B6E-4B8C-A7EA-1356A8E9439B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_LU_image.vcxproj">
+      <Project>62378585-AE5A-443D-BCF8-B4D54FEC85A0</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_LU_kernel.vcxproj">
+      <Project>19393FCD-A8E0-47FE-91E9-3973BEB5264A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_LU_solve.vcxproj">
+      <Project>740B2BA5-C2BC-4119-9BCE-C515171C91E9</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_adjoint.vcxproj">
+      <Project>20A2DA51-03DA-43AD-B161-F1FBECD9CF65</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_all.vcxproj">
+      <Project>04C1D88E-FB9D-4C00-8D5F-11617D735DA2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_asDiagonal.vcxproj">
+      <Project>C2E769FF-F83F-4151-AABD-79FDC40A3303</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_block_int_int.vcxproj">
+      <Project>4B3E6608-AE38-49A4-99A7-990AF1454021</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_block_int_int_int_int.vcxproj">
+      <Project>9EB815FD-EA8C-4080-BF0A-885224625D2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_cast.vcxproj">
+      <Project>6DEE097A-51D7-4F42-B599-4C349A84C316</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_col.vcxproj">
+      <Project>2A0B30E2-0A53-4AFC-A8DC-9E18BE2A8232</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_colwise.vcxproj">
+      <Project>5CD3C57F-953F-484B-AFAA-889958215D48</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_computeInverse.vcxproj">
+      <Project>C402523F-DEE3-4908-8E96-E10BAD260D5C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_corner_enum_int_int.vcxproj">
+      <Project>0C64CB69-E36A-4D76-9348-0C2FFE5D88AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_cwise.vcxproj">
+      <Project>61D8FED7-9CD1-48E2-A8A5-E1C843B5510D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_cwise_const.vcxproj">
+      <Project>D03C4D5D-964E-42C9-872E-FB5164925650</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_diagonal.vcxproj">
+      <Project>3DB524F2-42F9-4C88-BD79-AF3AB0FD9959</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_end_int.vcxproj">
+      <Project>BB1CCB51-8934-4361-B3F7-D01A2E6D7D80</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_eval.vcxproj">
+      <Project>0D03DC24-729E-4864-AC9D-6926BE82CB46</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_extract.vcxproj">
+      <Project>169B5355-79B7-4875-A262-936318C61323</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_fixedBlock_int_int.vcxproj">
+      <Project>61C32A7C-4B44-476D-AC26-83857F8E53F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_identity.vcxproj">
+      <Project>4A6F4C73-0834-4724-A7DC-667654C67923</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_identity_int_int.vcxproj">
+      <Project>6A565B37-B422-42ED-83E3-145B876F8B6C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_inverse.vcxproj">
+      <Project>C1951742-BE64-45E6-AC40-9A048DDDF3B7</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_isDiagonal.vcxproj">
+      <Project>5597FEA5-4B74-409A-91B9-112CCB20F0C9</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_isIdentity.vcxproj">
+      <Project>A213D7E2-1E11-426D-B266-04419A0DBA4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_isOnes.vcxproj">
+      <Project>B205C652-21F9-41C9-9DE5-D176A79D96F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_isOrthogonal.vcxproj">
+      <Project>C11FFF26-81C9-4D7E-9B7C-68A860F7E1AA</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_isUnitary.vcxproj">
+      <Project>FCF9EDB5-61E5-4F25-87C4-EDE18A244DD2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_isZero.vcxproj">
+      <Project>05897822-9E17-4F93-896A-48D741D604E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_lazy.vcxproj">
+      <Project>6205EBB9-441B-4CB5-8F11-185F5EB0E2D7</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_marked.vcxproj">
+      <Project>D5E1E541-2C3A-4547-9FF4-B8AABDA2B8E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_minor.vcxproj">
+      <Project>487F2333-F53E-4B19-AC83-9DAA81A9CF8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_ones.vcxproj">
+      <Project>13EB1D41-B591-4518-A1B8-1B767336FB4D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_ones_int.vcxproj">
+      <Project>08BF29DC-C8C9-4800-9A2D-02F3E3C5FC17</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_ones_int_int.vcxproj">
+      <Project>3E143C18-55D9-43B8-B3AE-C1F8094A030A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_part.vcxproj">
+      <Project>BC16E80A-5549-43DC-B114-15F5C46A31CC</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_random.vcxproj">
+      <Project>BCEBABFA-6B6E-4C60-A3D0-597150A12136</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_random_int.vcxproj">
+      <Project>F7C585E0-9022-4112-A44F-050CB8D59BED</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_random_int_int.vcxproj">
+      <Project>E4A0E199-5AE1-4976-9384-2ECFD2702166</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_row.vcxproj">
+      <Project>5316DBEC-C4F9-4B08-AC7B-0FD2B8CA5F07</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_rowwise.vcxproj">
+      <Project>AD363DA9-72E6-4024-A1DA-2B8B5ECD5191</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_segment_int_int.vcxproj">
+      <Project>0ED26ECE-EA30-47DA-9DC9-C318C634D40C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_set.vcxproj">
+      <Project>E8F25AD4-EC4B-4B15-8BCD-946E268F99F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_setIdentity.vcxproj">
+      <Project>1596E207-EF73-41D4-9C92-95A4B7B828D8</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_setOnes.vcxproj">
+      <Project>36D6367E-1ED6-48B0-B965-9CDA3EEA218A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_setRandom.vcxproj">
+      <Project>4F133164-E90A-4D67-881B-D1D0CB869268</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_setZero.vcxproj">
+      <Project>204BBD5A-952C-41F6-8750-E11DB43EBDB0</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_start_int.vcxproj">
+      <Project>5D5B1168-20C4-460F-8E6C-D993B9B53779</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_template_int_end.vcxproj">
+      <Project>AF6DC62C-250A-4467-81E1-BEBCD66C10C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_template_int_int_corner_enum.vcxproj">
+      <Project>D3A96C3E-8369-4432-915C-9777353BFD34</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_template_int_segment.vcxproj">
+      <Project>DEC771DF-8EE8-44EC-96E9-51BF67DF7236</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_template_int_start.vcxproj">
+      <Project>AAABA640-07C3-4519-AFDE-16CF717B72D2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_transpose.vcxproj">
+      <Project>88B9DAD1-E0B9-4B9E-9448-5E6F9ACF275E</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_zero.vcxproj">
+      <Project>C5361AF7-ABCC-42AC-8752-E0FAC2AE5C1E</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_zero_int.vcxproj">
+      <Project>F1B953C9-7EC5-493B-9392-56E88418760C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_MatrixBase_zero_int_int.vcxproj">
+      <Project>A41E2EB4-CF28-480F-BBD8-927B4DBC58AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_PartialRedux_count.vcxproj">
+      <Project>4DFB78C0-AE3D-4A08-A9ED-8CBAB51A7C25</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_PartialRedux_maxCoeff.vcxproj">
+      <Project>C6D5DD1C-9E8C-41DC-8DCC-721D35306550</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_PartialRedux_minCoeff.vcxproj">
+      <Project>FA668DD9-BB1D-4679-8949-C25788C35FF7</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_PartialRedux_norm.vcxproj">
+      <Project>F0936F3D-B26E-4F86-9E75-E7FED6764E0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_PartialRedux_squaredNorm.vcxproj">
+      <Project>3DA0152C-51EE-439E-AA10-34FBD38C82B1</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_PartialRedux_sum.vcxproj">
+      <Project>C90EF445-2229-4B46-820B-1E06EB897130</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Tutorial_commainit_01.vcxproj">
+      <Project>A64ED629-24EB-46C8-84B0-7584B343D7EA</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_Tutorial_commainit_02.vcxproj">
+      <Project>C1F1176E-F498-4A0C-87B1-B749BEB846DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/tracker code/eigen.2.0.17/build/doc/snippets/compile_class_LU.vcxproj">
+      <Project>71F31E07-D9A1-408B-9DF1-0299C58FD631</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
